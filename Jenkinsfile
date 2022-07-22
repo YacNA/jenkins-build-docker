@@ -6,7 +6,7 @@ node{
     }
 
     stage('Build image') {
-	app = dpcker.build("yacine/nginx")
+	app = docker.build("yacine/nginx")
     }
 
     stage('Run image') {
